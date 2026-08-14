@@ -1,0 +1,10 @@
+<div class="container">
+  <%= simple_form_for @song do |f| %>
+    <%= f.input :title %>
+    <%= f.submit %>
+  <% end %>
+  <form action="/songs" method="post">
+    <input type="text" name="song[title]" value="">
+    <input type="submit" value="Create song">
+  </form>
+</div>
